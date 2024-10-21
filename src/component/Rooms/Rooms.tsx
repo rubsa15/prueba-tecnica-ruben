@@ -15,7 +15,7 @@ export const Rooms: React.FC = () => {
             <p className='text-xl text-[#2E344D] font-semibold'>
               {selectedFloor?.description}
             </p>
-            <Button label='Añadir sala' onClick={() => addRoom()} />
+            <Button label='Añadir sala' onClick={addRoom} />
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8'>
             {selectedFloor?.rooms.map((room) => (

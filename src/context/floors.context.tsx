@@ -55,7 +55,6 @@ const FloorsProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
       }
       return floor;
     });
-
     setFloors(newFloors);
   };
 

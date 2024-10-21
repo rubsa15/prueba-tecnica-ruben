@@ -19,8 +19,7 @@ export const FloorService: FloorServiceType = {
     try {
       const response = await fetch('https://apimocha.com/ruben/floors');
       const floors = await response.json();
-      const mappedFloors = mapFloors(floors);
-      return mappedFloors;
+      return mapFloors(floors);
     } catch (error) {
       console.log(error);
       return;
